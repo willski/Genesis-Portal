@@ -1,0 +1,339 @@
+/************************ GLOBAL ************************/
+body {
+	margin: 0;
+	padding: 0;
+	background-image:url('../img/ecailles.png');
+	background-repeat:repeat;
+	background-color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 120%;
+	line-height: 1.6875;
+  	color: #666666;
+}
+a:hover {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+/****************************** HEADER ******************************/	
+
+.top-navbar {
+	background-color: #686A6D;
+	padding: 4px 0 4px 0;
+}
+.logo-section {
+	text-align: left;
+}
+.logo-style {
+	font-weight: 400;
+	font-size: 130%;
+	margin-top: 6px;
+	margin-bottom: 0;
+	color: #ffffff;
+}
+.top-navbar-actions {
+	float: right;
+}
+.top-navbar-item {
+	padding: 8px 8px 2px 8px;
+	margin-top: 4px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 130%;
+	color: #cccccc;
+}
+.top-navbar-item:hover {
+	color: #ffffff;
+}
+.sub-navbar {
+	min-height: 60px;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc0YTc3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YTk5NzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #E6E6E6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#E6E6E6));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#E6E6E6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#E6E6E6',GradientType=0 );
+}
+.sub-navbar-group {
+	text-align: center;
+	padding: 12px 2px 8px 2px;
+}
+.sub-navbar-item {
+	color: #666666;
+	opacity: .6;
+}
+.sub-navbar-item:hover {
+	color: #000000;
+	opacity: 1;
+	*transition-property: color, opacity, background-color;
+	transition-duration: .8s;
+	transition-timing-function: ease;
+	-moz-transition-property: color, opacity, background-color;
+	-moz-transition-duration: .8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-property: color, opacity, background-color;
+	-webkit-transition-duration: .8s;
+	-webkit-transition-timing-function: ease;*
+}
+.active-item {
+	color: #000000;
+	opacity: 1;
+}
+.sub-navbar-icon {
+	width: 48px;
+	height: auto;
+}
+.sub-navbar-title {
+	font-weight: 900;
+	font-size: 110%;
+}
+.sub-navbar-description {
+	font-weight: 400;
+	font-size: 90%;
+	line-height: .9;
+}
+/****************************** Footer ******************************/
+footer {
+	padding: 12px 20px 40px 20px;
+	background-color: #e5e5e5;
+	text-align: center;
+	border-top: 1px solid #666666;
+}
+footer {	
+}
+.footer-link {
+	padding: 20px;
+	font-size: 120%;
+	color: #666666;
+}
+.footer-link:hover {
+	color: #000000;
+}
+
+/****************************** Resources ******************************/
+.main-section {
+	padding: 20px 0 20px 0;
+	margin-bottom: 200px;
+}
+.side-menu {
+
+}
+.side-menu ul {
+	list-style: none;
+		background-color: #f5f5f5;
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+	padding: 12px;
+}
+.side-menu li {
+	padding: 2px 4px 6px 2px;
+}
+.side-menu li a {
+	color: #666666;
+	opacity: .6;
+}
+.active-side-menu-item {
+	font-weight: 900;
+}
+.side-menu li a:hover {
+	color: #000000;
+	opacity: 1;
+	*transition-property: color, opacity, background-color;
+	transition-duration: .8s;
+	transition-timing-function: ease;
+	-moz-transition-property: color, opacity, background-color;
+	-moz-transition-duration: .8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-property: color, opacity, background-color;
+	-webkit-transition-duration: .8s;
+	-webkit-transition-timing-function: ease;*
+}
+.main-menu {
+	padding: 12px 0 20px 0;
+}
+.page-title-style {
+	color: #666666;
+	margin-top: 0;
+}
+.product-category-section {
+	border-bottom: 1px solid #cccccc;
+}
+.product-category-style {
+	color: #666666;
+	margin-top: 20px;
+}
+.category-style {
+	color: #666666;
+	margin-top: 0;
+	font-weight: 400;
+}
+.resource-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.resource-list li {
+	padding: 4px 0 4px 0;
+	color: #666666;
+	font-size: 120%;
+}
+.resource-description-style {
+	font-weight: 300;
+}
+.resource-list a {
+	color: #F15D22;
+	opacity: 6;
+	margin: 0 0 0 20px;
+}
+.resource-list a:hover {
+	color: #F15D22;
+	opacity: 1;
+	*transition-property: color, opacity, background-color;
+	transition-duration: .8s;
+	transition-timing-function: ease;
+	-moz-transition-property: color, opacity, background-color;
+	-moz-transition-duration: .8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-property: color, opacity, background-color;
+	-webkit-transition-duration: .8s;
+	-webkit-transition-timing-function: ease;*
+}
+/****************************** Purchase Orders ******************************/
+.open-cart {
+	background-color: #F15D22;
+	border-radius: 6px;
+}
+.cart-items {
+	font-size: 140%;
+	font-weight: 400;
+	padding: 2px 6px 2px 6px;
+	color: #f5f5f5;
+}
+.cart-total {
+	font-weight: 900;
+}
+.view-cart-style {
+	font-size: 70%;
+	color: #cccccc;
+	margin-left: 8px;
+}
+.view-cart-style:hover {
+	color: #ffffff;
+}
+.product-section {
+	padding: 20px 0 12px 0;
+}
+.product-image-section {
+	text-align: left;
+	margin-top: 8px;
+}
+.product-image {
+	width: 150px;
+	height: 100px;
+}
+.product-text-section {
+	margin: 2px 0 2px 8px;
+}
+.product-name-style {
+	padding-left: 12px;
+}
+.product-description-style {
+	font-weight: 300;
+	font-size: 90%;
+}
+.product-price {
+	color: #F15D22;
+	font-weight: 900;
+}
+.feature-list {
+	margin-left: 0;
+}
+.cart-section {
+	margin-top: 20px;
+}
+.add-button {
+	padding: 2px 8px 2px 8px;
+	border-radius: 6px;
+	font-weight: 700;
+	font-size: 110%;
+	opacity: .7;
+	color: #666666;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc0YTc3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YTk5NzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #E6E6E6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#E6E6E6));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#E6E6E6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#E6E6E6',GradientType=0 );
+}
+.add-button:hover {
+	color: #F15D22;
+	opacity: 1;
+	transition-property: color, opacity, background-color;
+	transition-duration: .8s;
+	transition-timing-function: ease;
+	-moz-transition-property: color, opacity, background-color;
+	-moz-transition-duration: .8s;
+	-moz-transition-timing-function: ease;
+	-webkit-transition-property: color, opacity, background-color;
+	-webkit-transition-duration: .8s;
+	-webkit-transition-timing-function: ease;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc0YTc3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YTk5NzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #E6E6E6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#E6E6E6));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#E6E6E6 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#E6E6E6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#E6E6E6',GradientType=0 );
+}
+.single-order {
+	padding: 20px 0 20px 0;
+}
+.po-table-head td{
+	padding-right: 100px;
+	font-weight: 900;
+}
+.in-progress {
+	color: #FF931E;
+}
+.shipped {
+	color: #0071BC;
+}
+/****************************** Dashboard ******************************/
+.news-group {
+	margin:12px 0 12px 0;
+	margin-bottom: 40px;
+}
+.date-style {
+	font-weight: 300;
+	font-size: 90%;
+}
+.news-body-copy-style {
+	font-weight: 400;
+	line-height: 1.8;
+	font-size: 180%;
+}
+.promotion-image-section {
+	text-align: center;
+	padding: 40px;
+}
+.promotion-image {
+	width: 600px;
+	height: 200px;
+}
+/****************************** Invoice ******************************/
+.pay-online {
+	color: #39B54A;
+}
+/****************************** RMA ******************************/
+.rma-table-head td{
+	padding-right: 70px;
+	font-weight: 900;
+}

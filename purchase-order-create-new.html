@@ -1,0 +1,925 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Purchase Orders</title>
+		<LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+		<!--The good stuff-->
+		<meta name="robots" content="nofollow"/>
+		<meta name="description" content="Genesis CCTV Dealer Portal Resources and Downloads"></meta>
+		<!--Designed by William Lee of Lead Fox Consulting.-->
+		<!--Email Me: will@lead-fox.com-->
+		<!--Call Me: 407-694-0751-->
+		<!--Go Online: www.lead-fox.com-->
+		<!--CSS-->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/dealer-style.css" rel="stylesheet">
+		<!--Fontawesome-->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<!--Heading Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body><!--Body Starts Here-->
+		<header><!--Header Navigation-->
+			<div class="top-navbar">
+				<div class="container">
+					<div class="row">
+						<!--Logo Section-->
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="logo-section">
+								<!--<img class="logo" src="img/logo.png">-->
+								<h1 class="logo-style">Genesis CCTV&#153; <span style="font-weight: 300;">Dealer Portal</span></h1>
+							</div>
+						</div>
+						<!--Login Section-->
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<nav class="top-navbar-actions">
+								<a class="top-navbar-item" href="account-settings.html"><i class="fa fa-gear"></i> Account Settings</a>
+								<a class="top-navbar-item" href="">Logout</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sub-navbar">
+				<div class="container">
+					<div class="row">
+						<!--Single SubNav Bar Link-->
+						<div class="col-xs-2 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+							<div class="sub-navbar-group">
+								<a class="sub-navbar-item" href="dashboard.html">
+									<img class="sub-navbar-icon" src="img/icon_dashboard.png"><br>
+									<span class="sub-navbar-title">Dashboard</span><br>
+									<span class="sub-navbar-description">News, updates, and promotions from Genesis CCTV</span>
+								</a>
+							</div>
+						</div>
+						<!--Single SubNav Bar Link-->
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<div class="sub-navbar-group">
+								<a class="sub-navbar-item active-item" href="purchase-orders.html">
+									<img class="sub-navbar-icon" src="img/icon_po.png"><br>
+									<span class="sub-navbar-title">Purchase Orders</span><br>
+									<span class="sub-navbar-description">Create new purchase orders and check PO statuses</span>
+								</a>
+							</div>
+						</div>
+						<!--Single SubNav Bar Link-->
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<div class="sub-navbar-group">
+								<a class="sub-navbar-item" href="invoices.html">
+									<img class="sub-navbar-icon" src="img/icon_invoice.png"><br>
+									<span class="sub-navbar-title">Invoices</span><br>
+									<span class="sub-navbar-description">Review invoices, make payments and research open balances</span>
+								</a>
+							</div>
+						</div>
+						<!--Single SubNav Bar Link-->
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<div class="sub-navbar-group">
+								<a class="sub-navbar-item" href="rma.html">
+									<img class="sub-navbar-icon" src="img/icon_rma.png"><br>
+									<span class="sub-navbar-title">RMAs</span><br>
+									<span class="sub-navbar-description">Submit new RMA requests and check the status of RMAs</span>
+								</a>
+							</div>
+						</div>
+						<!--Single SubNav Bar Link-->
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<div class="sub-navbar-group">
+								<a class="sub-navbar-item" href="resources.html">
+									<img class="sub-navbar-icon" src="img/icon_resources.png"><br>
+									<span class="sub-navbar-title">Resources</span><br>
+									<span class="sub-navbar-description">Download product specs, prices lists, brochures and more</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!--End of Header-->
+		<!--Start of something great-->
+		<!--Body Content-->
+		<div class="main-section">
+			<div class= "container">
+				<div class="row">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<div class="side-menu">
+							<h2 class="page-title-style">Purchase Orders</h2>
+							<ul>
+								<!--Side Menu Navigation Link-->
+								<li>
+									<a class="active-side-menu-item" href="purchase-order-create-new.html">Create New Purchase Order
+									</a>
+								</li>
+								<!--Side Menu Navigation Link-->
+								<li>
+									<a href="purchase-order-my-orders.html">Purchase Order History
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+						<div class="main-menu">
+							<div class="row">
+								<div class="col-lg-8">
+									<h3 class="category-style">Create New Purchase Order</h3>
+								</div>
+								<div class="col-lg-4">
+									<div class="open-cart">
+										<span class="cart-items">Order Total: <span class="cart-total">$0.00</span><a href="my-cart.html" class="view-cart-style">View Cart</a></span>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">DVR Systems</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">CCTV Cameras</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">IP Megapixel and NVR</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">UTP Devices</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">BNC - LCD Montiors</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">Power Supplies</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Category-->
+							<div class="product-category-section">
+								<h4 class="product-category-style">Accessories</h4>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--a Single Product-->
+							<div class="row">
+								<div class="product-section">
+									<!--Product Image Section-->
+									<div class="col-lg-2">
+										<div class="product-image-section">
+											<img class="product-image" src="img/product_image.png">
+										</div>
+									</div>
+									<!--Product Text Section-->
+									<div class="col-lg-9">
+										<div class="product-text-section">
+											<h5 class="product-name-style">Product
+												<span class="product-description-style">Description Lorem ipsum dolor sit amet, conse ctetur <span class="product-price">$0.00</span>
+												</span>
+												</span>
+											</h5>
+										</div>
+										<div class="row">
+											<!--First Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+											<!--Second Row of Features-->
+											<div class="col-lg-6">
+												<ul class="feature-list">
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+													<li>Product Feature uis aute irure dolor in</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Product Add to Cart Section-->
+									<div class="col-lg-1">
+										<div class="cart-section">
+											<form role="form">
+												<div class="form-group">
+												<label for="exampleInputEmail1">Quantity</label>
+												<input type="email" class="form-control" id="productquantity" placeholder="0">
+												</div>
+												<button type="submit" class="add-button">Add</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer><!--Footer Starts Here-->
+			<nav>
+				<a class="footer-link" href="site-feedback.html">Site Feedback</a>
+				<a class="footer-link" href="http://genesiscctv.com" target="blank">Visit GenesisCCTV.com</a>
+				<p style="color: #666666;">&#169; Copyright 2013 - 2014 Genesis CCTV</p>
+			</nav>
+			
+		
+		</footer><!--End of Footer-->
+	</body>
+</html>
